@@ -1,0 +1,5 @@
+[
+  { "name": "Mustang", "price": 9999.99 },
+  { "name": "Challenger", "price": 14999.99 },
+  { "name": "Audi", "price": 19999.99 }
+]
