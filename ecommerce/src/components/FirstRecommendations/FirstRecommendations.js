@@ -1,0 +1,50 @@
+import React from "react";
+
+const FirstRecommendations = () => {
+  // Static mock data simulating recently viewed items
+  const recentItems = [
+    { image: "path-to-image1.jpg", title: "Item 1", price: 299 },
+    { image: "path-to-image2.jpg", title: "Item 2", price: 499 },
+    { image: "path-to-image3.jpg", title: "Item 3", price: 199 },
+    { image: "path-to-image4.jpg", title: "Item 4", price: 699 },
+    { image: "path-to-image5.jpg", title: "Item 5", price: 349 },
+  ];
+
+  return (
+    <section className="my-8 px-4">
+      {/* Section Header */}
+      <h2 className="text-xl font-bold text-gray-800 mb-4">
+        Recently Viewed Items
+      </h2>
+
+      {/* Items Grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        {recentItems.map((item, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-md hover:shadow-lg p-4 transition-all duration-300"
+          >
+            {/* Item Image */}
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-full h-40 object-cover rounded-md mb-2"
+            />
+
+            {/* Item Title */}
+            <h3 className="text-sm font-medium text-gray-800 truncate">
+              {item.title}
+            </h3>
+
+            {/* Item Price */}
+            <p className="text-blue-600 font-semibold mt-2">
+              ${item.price.toLocaleString()}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default FirstRecommendations;
