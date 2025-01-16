@@ -23,12 +23,12 @@ const PromotionsCarousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto">
+    <div className="relative w-full">
       {/* Carousel Container */}
       <div className="overflow-hidden relative">
         {/* Slides */}
         <div
-          className="flex transition-transform duration-300 ease-in-out"
+          className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {promotions.map((promo) => (

@@ -1,7 +1,7 @@
 // filepath: /C:/Users/luisc/OneDrive/Escritorio/Dev/Ecommerce/ecommerce/src/App.js
 import React from "react";
 import Header from "./components/Header/Header";
-import Carrousel from "./components/Promotions/PromotionsCarrousel";
+import Carrousel from "./components/Promotions/PromotionsCarousel";
 import RecommendationsSection from "./components/FirstRecommendations/FirstRecommendations";
 import TopicRecommendations from "./components/TopicRecommendations/TopicRecommendations";
 import Products from "./components/Products";

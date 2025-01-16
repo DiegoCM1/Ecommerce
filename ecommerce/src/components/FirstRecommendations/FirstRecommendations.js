@@ -11,7 +11,7 @@ const FirstRecommendations = () => {
   ];
 
   return (
-    <section className="my-8 px-4">
+    <section className="my-8 px-32">
       {/* Section Header */}
       <h2 className="text-xl font-bold text-gray-800 mb-4">
         Recently Viewed Items

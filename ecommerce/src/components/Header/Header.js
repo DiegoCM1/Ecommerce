@@ -5,7 +5,7 @@ import CartIcon from "./CartIcon";
 
 const Header = () => {
   return (
-    <header className="bg-yellow-400 shadow-md px-6 py-4 flex items-center justify-between">
+    <header className="bg-yellow-400 shadow-md px-32 py-4 flex items-center justify-between">
       {/* Logo */}
       <div className="flex-shrink-0">
         <a href="/">
