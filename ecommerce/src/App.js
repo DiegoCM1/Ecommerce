@@ -6,15 +6,23 @@ import RecommendationsSection from "./components/FirstRecommendations/FirstRecom
 import TopicRecommendations from "./components/TopicRecommendations/TopicRecommendations";
 import Products from "./components/Products";
 import "./index.css";
+import SecondaryRecommendations from "./components/SecondaryRecommendations/SecondaryRecommendations";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gray-100">
       <Header />
       <Carrousel />
       <RecommendationsSection />
       <TopicRecommendations
         topic="Popular Categories"
+        recommendations={[
+          { image: "path-to-image1.jpg", title: "Product 1", price: 299 },
+          { image: "path-to-image2.jpg", title: "Product 2", price: 399 },
+        ]}
+      />
+      <SecondaryRecommendations
+        topic="Secondary Recommendations"
         recommendations={[
           { image: "path-to-image1.jpg", title: "Product 1", price: 299 },
           { image: "path-to-image2.jpg", title: "Product 2", price: 399 },

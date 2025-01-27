@@ -1,7 +1,7 @@
 import React from "react";
 
 const NavigationMenu = () => {
-  const categories = ["Ofertas", "Historial", "Supermercado", "Moda", "Electrónica"];
+  const categories = ["Categorias", "Ofertas", "Historial", "Supermercado", "Moda", "Mercado Play", "Vender", "Ayuda"];
 
   return (
     <nav className="hidden md:block">
