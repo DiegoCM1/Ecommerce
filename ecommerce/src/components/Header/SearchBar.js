@@ -11,12 +11,12 @@ const SearchBar = () => {
 
   return (
     <form
-      className="flex flex-grow max-w-lg items-center bg-white rounded-md shadow-sm"
+      className="flex items-center bg-white rounded-sm shadow-sm"
       onSubmit={handleSearch}
     >
       <input
         type="text"
-        className="flex-grow px-4 py-2 rounded-l-md focus:outline-none"
+        className="flex w-full px-4 py-2 rounded-l-md focus:outline-none"
         placeholder="Buscar productos, marcas y más..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}

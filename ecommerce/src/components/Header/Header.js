@@ -7,8 +7,8 @@ import NavigationOption from "./Navigation-Option";
 
 const Header = () => {
   return (
-    <header className="bg-yellow-300 shadow-md px-32 py-4">
-      <div className="flex justify-around ">
+    <header className="bg-brightYellow shadow-md px-32 py-2">
+      <div className="flex justify-around">
         {/* Main Logo*/}
         <div className="w-1/5 ">
           <a href="/">
@@ -21,12 +21,12 @@ const Header = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="w-3/5 ">
+        <div className="w-3/5">
           <SearchBar />
         </div>
 
         {/* Mercado Play*/}
-        <div className="w-2/5">
+        <div className="w-2/5 flex justify-end">
           <a href="/">
             <img
               src="/images/mercado-play.png"
@@ -39,13 +39,13 @@ const Header = () => {
 
       {/* Right Icons: Cart */}
       <div className="flex justify-around">
-        <div className="w-1/5 ">
+        <div className="w-1/5 flex justify-start">
           <Location />
         </div>
-        <div className="w-3/5 ">
+        <div className="w-3/5 flex items-center">
           <NavigationMenu />
         </div>
-        <div className="w-2/5  flex space-x-4">
+        <div className="w-2/5  flex space-x-4 items-center justify-end">
           <div className="">
             <NavigationOption
               content="Profile"
@@ -69,7 +69,7 @@ const Header = () => {
           </div>
           <div className="">
             <NavigationOption
-              content="Notifications"
+              content="🔔"
               href="/"
               className="text-gray-800 hover:text-gray-600 text-sm font-medium"
             />
