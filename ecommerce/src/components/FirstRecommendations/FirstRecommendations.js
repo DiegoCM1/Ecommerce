@@ -2,15 +2,14 @@ import React from "react";
 import SeparatedCard from "../Cards/SeparatedCard";
 
 const FirstRecommendations = () => {
-  // Static mock data simulating recently viewed items
+  // Static data simulating real items
   const recentItems = [
-    { image: "path-to-image1.jpg", title: "Item 1", price: 299 },
-    { image: "path-to-image2.jpg", title: "Item 2", price: 499 },
-    { image: "path-to-image3.jpg", title: "Item 3", price: 199 },
-    { image: "path-to-image4.jpg", title: "Item 4", price: 699 },
-    { image: "path-to-image5.jpg", title: "Item 5", price: 349 },
-    { image: "path-to-image6.jpg", title: "Item 6", price: 449 },
-
+    { image: "/images/challenger.jpg", title: "Item 1", price: 299, originalPrice: 389, shippingType: "Free Shipping" },
+    { image: "/images/camaro.jpg", title: "Item 2", price: 499, originalPrice: 649, shippingType: "⚡Full" },
+    { image: "/images/challenger.jpg", title: "Item 3", price: 199, originalPrice: 259, shippingType: "Pickup Available" },
+    { image: "/images/mustang.jpg", title: "Item 4", price: 699, originalPrice: 909, shippingType: "Free Shipping" },
+    { image: "/images/vocho.jpg", title: "Item 5", price: 349, originalPrice: 459, shippingType: "Market Shipping" },
+    { image: "/images/audi.jpg", title: "Item 6", price: 449, originalPrice: 589, shippingType: "Agreed with Seller" },
   ];
 
   return (
@@ -21,7 +20,7 @@ const FirstRecommendations = () => {
       </h2>
 
       {/* Items Grid */}
-      <div className="grid grid-cols-6 gap-5 border border-blue-700">
+      <div className="grid grid-cols-6 gap-5">
         {recentItems.map((item, index) => (
           <SeparatedCard key={index} item={item} /> // Component call
         ))}

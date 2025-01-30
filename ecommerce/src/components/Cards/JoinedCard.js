@@ -1,8 +1,8 @@
 import React from "react";
 
-const SeparatedCard = ({ item }) => {
+const JoinedCard = ({ item }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md hover:shadow-lg p-4 transition-all duration-300 group">
+    <div className="bg-white p-4 transition-all duration-300 group">
       {/* Item Image */}
       <img
         src={item.image}
@@ -33,4 +33,4 @@ const SeparatedCard = ({ item }) => {
   );
 };
 
-export default SeparatedCard;
+export default JoinedCard;

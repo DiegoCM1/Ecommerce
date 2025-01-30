@@ -28,7 +28,6 @@ function App() {
           { image: "path-to-image2.jpg", title: "Product 2", price: 399 },
         ]}
       />
-      <Products />
     </div>
   );
 }
