@@ -8,6 +8,8 @@ const SecondaryRecommendations = () => {
     { image: "path-to-image3.jpg", title: "Item 3", price: 199 },
     { image: "path-to-image4.jpg", title: "Item 4", price: 699 },
     { image: "path-to-image5.jpg", title: "Item 5", price: 349 },
+    { image: "path-to-image6.jpg", title: "Item 6", price: 449 },
+
   ];
 
   return (
@@ -18,7 +20,7 @@ const SecondaryRecommendations = () => {
       </h2>
 
       {/* Items Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-6 gap-5">
         {recentItems.map((item, index) => (
           <div
             key={index}>
