@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         brightYellow: "rgb(252, 229, 1)", // Add your custom color here
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+      },
     },
   },
   plugins: [],

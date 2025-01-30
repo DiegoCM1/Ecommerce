@@ -2,12 +2,17 @@ import React from "react";
 
 const SeparatedCard = ({ item }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md hover:shadow-lg p-4 transition-all duration-300 group">
+    <div className="bg-white rounded-lg shadow-md hover:shadow-lg px-3 py-2 transition-all duration-300 group">
+      {/* Recommendations based on interest-interactions */}
+      <h2 className="text-md font-semibold text-gray-800 truncate">
+        {item.interaction}
+      </h2>
+
       {/* Item Image */}
       <img
         src={item.image}
         alt={item.title}
-        className="w-full h-40 object-contain mb-2"
+        className="w-full h-40 object-fit mb-2"
       />
 
       {/* Item Title */}

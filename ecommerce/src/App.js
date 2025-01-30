@@ -4,13 +4,12 @@ import Header from "./components/Header/Header";
 import Carrousel from "./components/Promotions/PromotionsCarousel";
 import RecommendationsSection from "./components/FirstRecommendations/FirstRecommendations";
 import TopicRecommendations from "./components/TopicRecommendations/TopicRecommendations";
-import Products from "./components/Products";
 import "./index.css";
 import SecondaryRecommendations from "./components/SecondaryRecommendations/SecondaryRecommendations";
 
 function App() {
   return (
-    <div className="App bg-gray-100">
+    <div className="App bg-gray-100 font-montserrat font-sans-serif">
       <Header />
       <Carrousel />
       <RecommendationsSection />
