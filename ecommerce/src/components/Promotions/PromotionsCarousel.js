@@ -3,9 +3,13 @@ import React, { useState } from "react";
 const PromotionsCarousel = () => {
   // Mock data for promotions
   const promotions = [
-    { id: 1, image: "path-to-image1.jpg", alt: "Promotion 1" },
+    { id: 1, image: "/images/promotion1.png", alt: "Promotion 1" },
     { id: 2, image: "path-to-image2.jpg", alt: "Promotion 2" },
     { id: 3, image: "path-to-image3.jpg", alt: "Promotion 3" },
+    { id: 1, image: "/images/promotion1.png", alt: "Promotion 1" },
+    { id: 2, image: "path-to-image2.jpg", alt: "Promotion 2" },
+    { id: 3, image: "path-to-image3.jpg", alt: "Promotion 3" },
+    { id: 1, image: "/images/promotion1.png", alt: "Promotion 1" }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,7 +27,7 @@ const PromotionsCarousel = () => {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full group">
       {/* Carousel Container */}
       <div className="overflow-hidden relative">
         {/* Slides */}
@@ -48,13 +52,13 @@ const PromotionsCarousel = () => {
 
       {/* Navigation Buttons */}
       <button
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 hover:bg-gray-600"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 rounded-full p-4 bg-transparent text-transparent group-hover:bg-white group-hover:text-blue-600 hover:shadow-md"
         onClick={prevSlide}
       >
         ❮
       </button>
       <button
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 hover:bg-gray-600"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 rounded-full p-4 bg-transparent text-transparent group-hover:bg-white group-hover:text-blue-600 hover:shadow-md"
         onClick={nextSlide}
       >
         ❯
