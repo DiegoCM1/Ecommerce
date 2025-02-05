@@ -3,7 +3,6 @@ import React from "react";
 import Header from "./components/Header/Header";
 import Carrousel from "./components/Promotions/PromotionsCarousel";
 import RecommendationsSection from "./components/FirstRecommendations/FirstRecommendations";
-import TopicRecommendations from "./components/TopicRecommendations/TopicRecommendations";
 import "./index.css";
 import SecondaryRecommendations from "./components/SecondaryRecommendations/SecondaryRecommendations";
 
@@ -13,19 +12,16 @@ function App() {
       <Header />
       <Carrousel />
       <RecommendationsSection />
-      <TopicRecommendations
-        topic="Popular Categories"
-        recommendations={[
-          { image: "path-to-image1.jpg", title: "Product 1", price: 299 },
-          { image: "path-to-image2.jpg", title: "Product 2", price: 399 },
-        ]}
-      />
       <SecondaryRecommendations
         topic="Secondary Recommendations"
-        recommendations={[
-          { image: "path-to-image1.jpg", title: "Product 1", price: 299 },
-          { image: "path-to-image2.jpg", title: "Product 2", price: 399 },
-        ]}
+      />
+
+      <SecondaryRecommendations
+        topic="Third Recommendations"
+      />
+
+      <SecondaryRecommendations
+        topic="Fourth Recommendations"
       />
     </div>
   );

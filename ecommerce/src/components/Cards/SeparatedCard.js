@@ -12,7 +12,7 @@ const SeparatedCard = ({ item }) => {
       <img
         src={item.image}
         alt={item.title}
-        className="w-full h-40 object-fit mb-2"
+        className="w-full h-40 object-cover mb-2"
       />
 
       {/* Item Title */}
@@ -26,7 +26,7 @@ const SeparatedCard = ({ item }) => {
       </p>
 
       {/* Item Price */}
-      <p className="text-md font-medium text-gray-800 truncate mt-2">
+      <p className="text-md font-semibold text-black truncate mt-2">
         ${item.price.toLocaleString()}
       </p>
 

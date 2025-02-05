@@ -2,12 +2,12 @@ import React from "react";
 
 const JoinedCard = ({ item }) => {
   return (
-    <div className="bg-white p-4 transition-all duration-300 group">
+    <div className="bg-white transition-all duration-300 group">
       {/* Item Image */}
       <img
         src={item.image}
         alt={item.title}
-        className="w-full h-40 object-fit mb-2"
+        className="w-full h-40 object-cover mb-2"
       />
 
       {/* Item Title */}
@@ -21,7 +21,7 @@ const JoinedCard = ({ item }) => {
       </p>
 
       {/* Item Price */}
-      <p className="text-md font-medium text-gray-800 truncate mt-2">
+      <p className="text-md font-semibold text-black truncate mt-2">
         ${item.price.toLocaleString()}
       </p>
 
