@@ -4,7 +4,7 @@ const HeaderLogo = () => {
   return (
     <a href="/">
       <img
-        src="/images/mercado-libre-logo.png"
+        src={`${process.env.PUBLIC_URL}/images/mercado-libre-logo.png`}
         alt="Mercado Libre Logo"
         className="h-10"
       />

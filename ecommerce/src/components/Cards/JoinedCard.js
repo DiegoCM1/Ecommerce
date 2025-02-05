@@ -7,7 +7,7 @@ const JoinedCard = ({ item }) => {
       <img
         src={item.image}
         alt={item.title}
-        className="w-full h-40 object-cover mb-2"
+        className="w-full h-40 object-fill mb-2"
       />
 
       {/* Item Title */}
