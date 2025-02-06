@@ -3,14 +3,11 @@ import React, { useState } from "react";
 const PromotionsCarousel = () => {
   // Mock data for promotions
   const promotions = [
-    { id: 1, image: "/images/promotion1.png", alt: "Promotion 1" },
-    { id: 2, image: "path-to-image2.jpg", alt: "Promotion 2" },
-    { id: 3, image: "path-to-image3.jpg", alt: "Promotion 3" },
-    { id: 1, image: "/images/promotion1.png", alt: "Promotion 1" },
-    { id: 2, image: "path-to-image2.jpg", alt: "Promotion 2" },
-    { id: 3, image: "path-to-image3.jpg", alt: "Promotion 3" },
-    { id: 1, image: "/images/promotion1.png", alt: "Promotion 1" }
+    { id: 1, image: `${process.env.PUBLIC_URL}/images/promotion1.png`, alt: "Promotion 1" },
+    { id: 2, image: `${process.env.PUBLIC_URL}/images/promotion2.png`, alt: "Promotion 2" },
+    { id: 3, image: `${process.env.PUBLIC_URL}/images/promotion3.png`, alt: "Promotion 3" }
   ];
+  
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
