@@ -1,8 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const SeparatedCard = ({ item }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className="bg-white rounded-lg shadow-md hover:shadow-lg px-3 py-2 transition-all duration-300 group">
+    <div onClick={() => navigate("/ProductCard")} className="bg-white rounded-lg shadow-md hover:shadow-lg px-3 py-2 transition-all duration-300 group">
       {/* Recommendations based on interest-interactions */}
       <h2 className="text-md font-semibold text-gray-800 truncate">
         {item.interaction}

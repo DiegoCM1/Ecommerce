@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import SeparatedCard from "../Cards/SeparatedCard";
 import { recentItems } from "../../data/Products"; // Import the product data
 
+
 const ITEMS_PER_PAGE = 6; // Define how many items to show at once
 
 const FirstRecommendations = () => {
+
   // State to track which set of items is currently visible
   const [currentIndex, setCurrentIndex] = useState(0);
 
