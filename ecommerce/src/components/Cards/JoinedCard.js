@@ -2,7 +2,7 @@ import React from "react";
 
 const JoinedCard = ({ item }) => {
   return (
-    <div className="bg-white transition-all duration-300 group">
+    <div className="bg-white transition-all duration-300 hover:shadow-md group">
       {/* Item Image */}
       <img
         src={item.image}
@@ -10,7 +10,7 @@ const JoinedCard = ({ item }) => {
         className="w-full h-40 object-fill mb-2"
       />
 
-      {/* Item Title */}
+      {/* Item Title (changes color when the entire card is hovered) */}
       <h3 className="text-sm font-normal text-gray-950 truncate group-hover:text-blue-600">
         {item.title}
       </h3>
