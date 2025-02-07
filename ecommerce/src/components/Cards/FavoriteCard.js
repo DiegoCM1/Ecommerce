@@ -1,11 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-const JoinedCard = ({ item }) => {
-  const navigate = useNavigate();
+const FavoriteCard = ({ item }) => {
 
   return (
-    <div onClick={() => navigate("/Favorites")} className="bg-white transition-all duration-300 hover:shadow-md group">
+    <div className="bg-white transition-all duration-300 hover:shadow-md group">
       {/* Item Image */}
       <img
         src={item.image}
@@ -36,4 +34,4 @@ const JoinedCard = ({ item }) => {
   );
 };
 
-export default JoinedCard;
+export default FavoriteCard;
