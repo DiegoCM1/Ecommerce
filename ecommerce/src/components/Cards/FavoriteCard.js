@@ -1,9 +1,12 @@
 import React from "react";
 
-const FavoriteCard = ({ item }) => {
+const FavoriteCard = ({ item, removeItem, isRemoving }) => {
   return (
-    <div className="bg-white group flex border-b border-gray-200
-">
+    <div
+      className={`bg-white group flex border-b border-gray-200 transition-all duration-300 ${
+        isRemoving ? "opacity-0 -translate-x-20" : "opacity-100 translate-x-0"
+      }`}
+    >
       {/* Item Image */}
       <img
         src={item.image}
@@ -11,7 +14,7 @@ const FavoriteCard = ({ item }) => {
         className="w-40 h-40 object-contain my-4 mx-4"
       />
       <div className="flex flex-col justify-between my-4">
-        {/* Item Title (changes color when the entire card is hovered) */}
+        {/* Item Title */}
         <h3 className="text-lg font-medium text-black truncate group-hover:text-blue-600">
           {item.title}
         </h3>
@@ -33,10 +36,13 @@ const FavoriteCard = ({ item }) => {
 
         {/* Buttons for Add/Delete */}
         <div>
-          <button className=" text-blue-500 text-xs font-bold py-3 pr-2 rounded-md mt-2">
+          <button className="text-blue-500 text-xs font-bold py-3 pr-2 rounded-md mt-2">
             Add to list
           </button>
-          <button className=" text-blue-500 text-xs font-bold py-3 pl-2 rounded-md mt-2">
+          <button
+            className="text-blue-500 text-xs font-bold py-3 pl-2 rounded-md mt-2"
+            onClick={() => removeItem(item.id)} // ✅ Corrected
+          >
             Remove
           </button>
         </div>
