@@ -3,7 +3,7 @@ import NavigationOption from "./Navigation-Option";
 
 const NavigationMenu = () => {
   return (
-    <nav className="hidden md:block">
+    <nav className="hidden md:flex">
       <ul className="flex space-x-4">
         <div className="">
           <NavigationOption

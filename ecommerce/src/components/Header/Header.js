@@ -12,24 +12,31 @@ const Header = () => {
 
   return (
     <header className="bg-brightYellow shadow-md px-4 py-2 md:px-32">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center border border-red-600">
+        {/* Header logo */}
+        <div className="hidden md:flex md:ml-0 md:w-2/12 lg:flex lg:w-1/12 ml-4  border border-red-600">
+          <HeaderLogo />
+        </div>
         {/* Burger menu button for mobile view */}
         <button
-          className="md:hidden text-gray-800"
+          className="md:hidden lg:hidden text-gray-800"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           ☰
         </button>
         {/* Search bar for desktop view */}
-        <div className="hidden md:flex w-3/5">
+        <div className="w-4/5 md:flex md:w-3/5 lg:flex lg:md:w-3/5  border border-red-600">
           <SearchBar />
         </div>
+        {/* Mercado play logo for desktop view*/}
+        <div className="hidden ml-4 md:ml-0
+        md:flex md:w-1/5 
+        lg:flex lg:w-1/6
+        border border-red-600">
+          <MercadoPlayLogo />
+        </div>
         {/* Cart icon */}
-        <div className="flex items-center space-x-4">
-          {/* Search bar for mobile view */}
-          <div className="md:hidden">
-            <SearchBar />
-          </div>
+        <div className="flex items-center space-x-4 border border-red-600">
           <CartIcon />
         </div>
       </div>
@@ -38,21 +45,17 @@ const Header = () => {
         <Location />
       </div>
 
-      <div className="flex justify-between items-center mt-2 md:mt-0">
-        {/* Header logo */}
-        <div className="hidden ml-4 md:ml-0">
-          <HeaderLogo />
-        </div>
+      <div className="flex justify-between items-center mt-2 border border-red-600">
         {/* Location component for desktop view */}
-        <div className="hidden md:flex w-1/5">
+        <div className="hidden md:flex md:w-2/12 lg:flex lg:w-1/12 border border-blue-600">
           <Location />
         </div>
         {/* Navigation menu for desktop view */}
-        <div className="hidden md:flex w-3/5 items-center">
+        <div className="hidden md:flex md:w-3/5 lg:flex lg:md:w-3/5 border border-green-600">
           <NavigationMenu />
         </div>
         {/* Navigation options for desktop view */}
-        <div className="hidden md:flex w-2/5 space-x-4 items-center justify-end">
+        <div className="hidden md:flex space-x-4 items-center justify-end  border border-purple-600">
           <NavigationOption
             content="Profile"
             href="/"
@@ -99,8 +102,6 @@ const Header = () => {
             href="/"
             className="block text-gray-800 hover:text-gray-600 text-sm font-medium"
           />
-          {/* Location component for mobile view */}
-          <Location />
         </div>
       )}
     </header>
