@@ -1,21 +1,19 @@
 import React from "react";
 
-const HorizontalCardMobile = ({ item, removeItem, isRemoving }) => {
+const HorizontalCardMobile = ({ item }) => {
   return (
     <div
-      className={`bg-white group flex border-b border-gray-200 transition-all duration-300 ${
-        isRemoving ? "opacity-0 -translate-x-20" : "opacity-100 translate-x-0"
-      }`}
+      className="bg-white group flex border-b border-gray-200"
     >
       {/* Item Image */}
       <img
         src={item.image}
         alt={item.title}
-        className="w-40 h-40 object-contain my-4 mx-4"
+        className="w-24 h-24 object-contain my-4 mr-4"
       />
       <div className="flex flex-col justify-between my-4">
         {/* Item Title */}
-        <h3 className="text-lg font-medium text-black truncate group-hover:text-blue-600">
+        <h3 className="text-xs text-wrap font-medium text-black truncate group-hover:text-blue-600">
           {item.title}
         </h3>
 

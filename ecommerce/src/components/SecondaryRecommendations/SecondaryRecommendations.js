@@ -56,7 +56,7 @@ const SecondaryRecommendations = () => {
             <div
               key={index}
               className={`px-2 ${
-                isMobile ? "w-full flex-shrink-0" : "lg:w-1/6 flex-shrink-0"
+                isMobile ? "w-full flex-shrink-0" : "md:w-1/4 lg:w-1/6 flex-shrink-0"
               }`}
             >
               {isMobile ? (

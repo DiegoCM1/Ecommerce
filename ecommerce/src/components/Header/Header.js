@@ -35,8 +35,8 @@ const Header = () => {
         border-red-600">
           <MercadoPlayLogo />
         </div>
-        {/* Cart icon */}
-        <div className="flex items-center space-x-4 border-red-600">
+        {/* Cart icon Mobile*/}
+        <div className="flex items-center space-x-4 border-red-600 md:hidden lg:hidden">
           <CartIcon />
         </div>
       </div>
@@ -75,6 +75,9 @@ const Header = () => {
             content="🔔"
             href="/"
             className="text-gray-800 hover:text-gray-600 text-sm font-medium"
+          />
+          <CartIcon 
+          className="md:flex lg:flex"
           />
         </div>
       </div>
