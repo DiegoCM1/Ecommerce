@@ -29,9 +29,6 @@ const ProductCard = () => {
           />
         ))}
       </div>
-      <button onClick={() => navigate("/")}>
-        Go back to the main page
-      </button>
     </section>
   );
 };

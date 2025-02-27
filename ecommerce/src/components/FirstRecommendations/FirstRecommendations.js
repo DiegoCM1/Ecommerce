@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import SeparatedCard from "../Cards/SeparatedCard";
 import { recentItems } from "../../data/Products"; // Import the product data
 
-
 const ITEMS_PER_PAGE = 6; // Define how many items to show at once
 
 const FirstRecommendations = () => {
-
   // State to track which set of items is currently visible
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -31,7 +29,7 @@ const FirstRecommendations = () => {
   return (
     <section className="my-8 group">
       {/* Carousel Wrapper */}
-      <div className="overflow-hidden mx-32 relative">
+      <div className="overflow-hidden lg:mx-32 relative">
         {/* Sliding Container */}
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -41,7 +39,7 @@ const FirstRecommendations = () => {
         >
           {/* Map through the items and display each one */}
           {recentItems.map((item, index) => (
-            <div key={index} className="w-1/6 flex-shrink-0 px-2">
+            <div key={index} className="w-1/3 md:w-1/5 lg:w-1/6 flex-shrink-0 px-1">
               <SeparatedCard item={item} />
             </div>
           ))}
@@ -50,7 +48,7 @@ const FirstRecommendations = () => {
         {/* Left Navigation Button (Hidden at Start) */}
         {currentIndex > 0 && (
           <button
-            className="absolute top-1/2 left-[-20px] transform -translate-y-1/2 rounded-full py-5 px-7 bg-white text-blue-600 shadow-lg transition"
+            className="absolute top-1/2 left-[-10px] md:left-[-15px] lg:left-[-20px] transform -translate-y-1/2 rounded-full py-3 px-5 md:py-4 md:px-6 lg:py-5 lg:px-7 bg-white text-blue-600 shadow-lg transition"
             onClick={prevSlide}
           >
             ❮
@@ -60,7 +58,7 @@ const FirstRecommendations = () => {
         {/* Right Navigation Button (Hidden at End) */}
         {currentIndex + ITEMS_PER_PAGE < recentItems.length && (
           <button
-            className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 rounded-full py-5 px-7 bg-white text-blue-600 shadow-lg transition"
+            className="absolute top-1/2 right-[-10px] md:right-[-15px] lg:right-[-20px] transform -translate-y-1/2 rounded-full py-3 px-5 md:py-4 md:px-6 lg:py-5 lg:px-7 bg-white text-blue-600 shadow-lg transition"
             onClick={nextSlide}
           >
             ❯
