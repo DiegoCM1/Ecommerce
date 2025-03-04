@@ -18,7 +18,7 @@ const ProductCard = () => {
   };
 
   return (
-    <section className="my-8 mx-32 bg-white shadow-md rounded-sm">
+    <section className="md:my-8 md:mx-20 lg:mx-32 bg-white shadow-md rounded-sm">
       <div className="grid grid-rows-3 gap-4">
         {items.map((product) => (
           <FavoriteCard
